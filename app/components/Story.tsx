@@ -22,8 +22,8 @@ export default function StoryCollage() {
   };
 
   return (
-    <section className="py-16 bg-[#92400EB5] relative overflow-hidden">
-      <div className="max-w-6xl mx-auto px-6 text-center text-[#FFF8DE]">
+    <section className="py-16 bg-[#F7B984B5] relative overflow-hidden">
+      <div className="max-w-6xl mx-auto px-6 text-center text-[#492F01]">
         <h2 className="text-4xl font-serif font-bold mb-6">“Our Story”</h2>
         <p className="max-w-3xl mx-auto mb-12 leading-7">
           Miss Cheesecake began in a cozy Jodhpur kitchen with a simple dream—to make rich,

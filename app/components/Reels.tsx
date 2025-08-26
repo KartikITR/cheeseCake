@@ -6,7 +6,7 @@ export default function Reels() {
     <section className="py-12 bg-[#FFF8DE]">
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-serif font-bold mb-4">Watch Our Reels</h2>
-        <p className="max-w-2xl mx-auto mb-6 text-[#6b4a38]">
+        <p className="max-w-2xl mx-auto mb-6 text-[#92400E]">
           Go behind the scenes and discover the artistry, passion, and craftsmanship
           that goes into every single cheesecake we create.
         </p>

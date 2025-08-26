@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function BigBite() {
     return (
-        <section className="py-12 bg-[#92400EB5] relative">
+        <section className="py-12 bg-[#F7B984B5] relative">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
                 <h2 className="text-2xl sm:text-3xl font-serif font-bold mb-4 sm:mb-6">“Big Bite on TV”</h2>
                 <p className="max-w-2xl mx-auto mb-8 sm:mb-12 text-[#6b4a38] text-sm sm:text-base">
