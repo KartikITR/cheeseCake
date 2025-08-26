@@ -26,14 +26,15 @@ export default function StoryCollage() {
       <div className="max-w-6xl mx-auto px-6 text-center text-[#492F01]">
         <h2 className="text-4xl font-serif font-bold mb-6">“Our Story”</h2>
         <p className="max-w-3xl mx-auto mb-12 leading-7">
-          Miss Cheesecake began in a cozy Jodhpur kitchen with a simple dream—to make rich,
-          creamy cheesecakes accessible to everyone. Founded by two passionate individuals,
-          the brand took off with handcrafted flavors made using homemade cream cheese. What
-          started as a small venture quickly gained love, especially after being featured
-          on Shark Tank India. With signature slices and a commitment to affordability,
-          Miss Cheesecake has sold thousands of cakes and built a strong community of
-          dessert lovers. Today, it’s more than just a brand—it’s a sweet emotion shared
-          one slice at a time.
+          Miss Cheesecake began in a cozy Jodhpur kitchen with a simple dream—to
+          make rich, creamy cheesecakes accessible to everyone. Founded by two
+          passionate individuals, the brand took off with handcrafted flavors
+          made using homemade cream cheese. What started as a small venture
+          quickly gained love, especially after being featured on Shark Tank
+          India. With signature slices and a commitment to affordability, Miss
+          Cheesecake has sold thousands of cakes and built a strong community of
+          dessert lovers. Today, it’s more than just a brand—it’s a sweet
+          emotion shared one slice at a time.
         </p>
 
         {/* --- MOBILE STACK VIEW (<640px) --- */}
@@ -67,34 +68,87 @@ export default function StoryCollage() {
 
         {/* --- DESKTOP COLLAGE (≥1024px) --- */}
         <div className="hidden md:block relative mx-auto h-[760px] max-w-[1100px]">
+          {/* Polaroids */}
           <Polaroid
-            className="absolute top-[10px] left-[10px] rotate-[0deg]"
+            className="absolute top-[10px] left-[10px]"
             {...cards[0]}
           />
           <Polaroid
-            className="absolute top-[80px] left-[300px] rotate-[0deg]"
+            className="absolute top-[80px] left-[300px]"
             {...cards[1]}
           />
           <Polaroid
-            className="absolute top-[10px] left-[580px] rotate-[0deg]"
+            className="absolute top-[10px] left-[580px]"
             {...cards[2]}
           />
           <Polaroid
-            className="absolute top-[80px] right-[0px] rotate-[0deg]"
+            className="absolute top-[80px] right-[0px]"
             {...cards[3]}
           />
           <Polaroid
-            className="absolute top-[360px] left-[140px] rotate-[0deg]"
+            className="absolute top-[360px] left-[140px]"
             {...cards[4]}
           />
           <Polaroid
-            className="absolute top-[400px] left-[380px] rotate-[0deg]"
+            className="absolute top-[500px] left-[380px]"
             {...cards[5]}
           />
           <Polaroid
-            className="absolute top-[380px] right-[130px] rotate-[1deg]"
+            className="absolute top-[380px] right-[130px]"
             {...cards[6]}
           />
+
+          {/* Arrows (under polaroids) */}
+          <div className="absolute inset-0 pointer-events-none">
+            {/* Arrow from 1 -> 2 */}
+            <Image
+              src="/line1.png"
+              alt="arrow"
+              width={120}
+              height={80}
+              className="absolute top-[10px] left-[210px] z-0"
+            />
+            {/* Arrow from 2 -> 3 */}
+            <Image
+              src="/line2.png"
+              alt="arrow"
+              width={120}
+              height={80}
+              className="absolute top-[-20px] left-[480px] z-0"
+            />
+            {/* Arrow from 3 -> 4 */}
+            <Image
+              src="/line3.png"
+              alt="arrow"
+              width={120}
+              height={80}
+              className="absolute top-[10px] left-[800px] z-0"
+            />
+            {/* Arrow from 4 -> 5 */}
+            <Image
+              src="/line4.png"
+              alt="arrow"
+              width={120}
+              height={80}
+              className="absolute top-[250px] left-[10px] z-0"
+            />
+            {/* Arrow from 5 -> 6 */}
+            <Image
+              src="/line5.png"
+              alt="arrow"
+              width={120}
+              height={80}
+              className="absolute top-[660px] left-[200px] z-0"
+            />
+            {/* Arrow from 6 -> 7 */}
+            <Image
+              src="/line6.png"
+              alt="arrow"
+              width={80}
+              height={80}
+              className="absolute top-[720px] left-[740px] z-0"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -113,7 +167,7 @@ type PolaroidProps = {
 function Polaroid({ className, src, caption, w, h }: PolaroidProps) {
   return (
     <div className={className}>
-      <div className="bg-[#F1E6C9] shadow-[0_10px_25px_rgba(0,0,0,0.25)] p-2">
+      <div className="bg-[#F1E6C9] shadow-[0_10px_25px_rgba(0,0,0,0.25)] p-2 relative z-10">
         <div
           className="relative rounded-md overflow-hidden bg-white"
           style={{ width: w, height: h }}
