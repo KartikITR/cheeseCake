@@ -6,6 +6,7 @@ import Reels from "./components/Reels";
 import BigBite from "./components/BigBite";
 import Mission from "./components/Mission";
 
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#FFF8DE] text-[#4a3528]">
