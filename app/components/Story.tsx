@@ -12,7 +12,7 @@ export default function StoryCollage() {
     { src: "/4.png", caption: "Social Buzz", w: 230, h: 250 },
     { src: "/5.png", caption: "OG Jars", w: 210, h: 250 },
     { src: "/6.png", caption: "Where Magic Bakes", w: 290, h: 260 },
-    { src: "/last.png", caption: "Sweet Collabs", w: 230, h: 270 },
+    { src: "/wheremagic.jpg", caption: "Sweet Collabs", w: 230, h: 270 },
   ];
 
   const [index, setIndex] = useState(0);
@@ -90,7 +90,7 @@ export default function StoryCollage() {
             {...cards[4]}
           />
           <Polaroid
-            className="absolute top-[500px] left-[380px]"
+            className="absolute top-[400px] left-[380px]"
             {...cards[5]}
           />
           <Polaroid
@@ -101,6 +101,34 @@ export default function StoryCollage() {
           {/* Arrows (under polaroids) */}
           <div className="absolute inset-0 pointer-events-none">
             {/* Arrow from 1 -> 2 */}
+            <Image
+              src="/vector.png"
+              alt="vector"
+              width={38}
+              height={47}
+              className="absolute top-[0px] left-[-25px] z-0"
+            />
+            <Image
+              src="/Group.png"
+              alt="vector"
+              width={38}
+              height={47}
+              className="absolute top-[600px] left-[-25px] z-0"
+            />
+            <Image
+              src="/Group2.png"
+              alt="vector"
+              width={41}
+              height={50}
+              className="absolute top-[0px] left-[1110px] z-0"
+            />
+            <Image
+              src="/Group3.png"
+              alt="vector"
+              width={41}
+              height={50}
+              className="absolute top-[700px] left-[100px] z-0"
+            />
             <Image
               src="/line1.png"
               alt="arrow"
